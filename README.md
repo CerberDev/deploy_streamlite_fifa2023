@@ -44,5 +44,5 @@ Para manter o código limpo, o projeto foi dividido em partes menores, cada uma 
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Alessandro França**  Desenvolvedor de Automação RPA | Desenvolvedor Python & .NET  
+**Alessandro França** | Desenvolvedor de Automação RPA | Desenvolvedor Python & .NET  
 🔗 [Conecte-se comigo no LinkedIn](https://www.linkedin.com/in/alessandro-franca-rpa-developer/)
