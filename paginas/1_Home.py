@@ -13,10 +13,13 @@ with st.spinner("Carregando os dados da página..."):
 st.markdown("# FIFA23 OFFICIAL DATASET! ⚽")
 st.sidebar.markdown("Desenvolvido por [Alessandro França](https://www.linkedin.com/in/alessandro-franca-rpa-developer/)")
 
-btn = st.button("Acesse os dados do Kaggle")
-if btn:
-    webbrowser.open_new_tab("https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database")
+# Comentado para adicionar uma feature que funciona após clicar quando hospedado, da forma atual so abre no meu navegador
+#btn = st.button("Acesse os dados do Kaggle")
+#if btn:
+ #   webbrowser.open_new_tab("https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database")
 
+#Foram após deploy
+btn = st.link_button("Acesse os dados do Kaggle","https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database")
 st.markdown(
     """
 O conjunto de dados de jogadores de futebol de 2023 fornece informações abrangentes sobre jogadores de futebol profissionais.
