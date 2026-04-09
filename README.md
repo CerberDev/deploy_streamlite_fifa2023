@@ -40,7 +40,7 @@ Para manter o código limpo, o projeto foi dividido em partes menores, cada uma 
 * **`data_loader.py`**: É o motor de dados. Ele lê a planilha do FIFA, limpa as informações de dinheiro e formata as datas, entregando tudo pronto para a tela usar.
 * **`paginas/`**: Uma pasta que guarda os arquivos visuais (1_Home, 2_Players e 3_Teams). Elas focam apenas em desenhar a tela e buscar as imagens na internet.
 
-## Referência tutoriais do AsimovAcademy 
+## Referência: tutoriais da Asimov Academy 
 
 ## 👨‍💻 Autor
 
