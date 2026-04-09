@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 from datetime import datetime
-
+from pathlib import Path
 def clean_money(value):
     """Limpa a formatação do dinheiro na base Fifa."""
     if pd.isna(value):
@@ -21,10 +21,10 @@ def clean_money(value):
 @st.cache_data
 def carregar_dados():
     """Lê e trata o dataset. O cache evita que isso rode duas vezes."""
-    df_data = pd.read_csv(
-        r"C:\Users\AlessandroFranca\Desktop\Estudos dev\AsimovAcademy\FIFADASH\datasets\FIFA23_official_data.csv",
-        index_col=0
-    )
+    #Descobre onde o script atual está rodando e monta o caminho dinamicamente
+    pasta_raiz = Path(__file__).parent.parent
+    caminho_csv = pasta_raiz /"datasets"/"FIFA23_official_data.csv"
+    df_data = pd.read_csv(caminho_csv, index_col=0)
 
     df_data["Value"] = df_data["Value"].apply(clean_money)
     df_data["Wage"] = df_data["Wage"].apply(clean_money)
